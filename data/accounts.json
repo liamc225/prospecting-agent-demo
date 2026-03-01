@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "company": "Meridian Health Partners",
+    "industry": "Health system",
+    "us_employees": 22000,
+    "contact_name": "David Chen",
+    "contact_title": "VP, Total Rewards",
+    "health_plan": "Anthem",
+    "notes": "3 hospitals, 12 outpatient clinics across the Midwest"
+  },
+  {
+    "id": 2,
+    "company": "Lakeview University",
+    "industry": "University",
+    "us_employees": 14000,
+    "contact_name": "Sarah Okafor",
+    "contact_title": "Director of Employee Wellness",
+    "health_plan": "Aetna",
+    "notes": "Includes 6,000 staff + 8,000 student employees; wellness program recently expanded"
+  },
+  {
+    "id": 3,
+    "company": "TrueNorth Financial Group",
+    "industry": "Financial services",
+    "us_employees": 18500,
+    "contact_name": "James Whitfield",
+    "contact_title": "Chief People Officer",
+    "health_plan": "Cigna",
+    "notes": "Recently completed a merger; integrating two separate benefits programs"
+  },
+  {
+    "id": 4,
+    "company": "Cascadia Timber & Land",
+    "industry": "Forestry / natural resources",
+    "us_employees": 4200,
+    "contact_name": "Maria Gutierrez",
+    "contact_title": "Benefits Manager",
+    "health_plan": "Regional BCBS",
+    "notes": "Workforce is 70% field-based with limited internet access during shifts"
+  },
+  {
+    "id": 5,
+    "company": "Pinnacle Senior Living",
+    "industry": "Senior living / healthcare",
+    "us_employees": 9800,
+    "contact_name": null,
+    "contact_title": null,
+    "health_plan": "Unknown",
+    "notes": "High-turnover workforce (CNAs, LPNs); no contact identified yet"
+  },
+  {
+    "id": 6,
+    "company": "Great Plains Community College",
+    "industry": "Education",
+    "us_employees": 1800,
+    "contact_name": "Tom Bradley",
+    "contact_title": "HR Director",
+    "health_plan": "State employee plan",
+    "notes": "Small community college; limited benefits budget"
+  },
+  {
+    "id": 7,
+    "company": "Commonwealth Care Alliance",
+    "industry": "Health system",
+    "us_employees": 16000,
+    "contact_name": "Priya Nair",
+    "contact_title": "SVP, Human Resources",
+    "health_plan": "Anthem",
+    "notes": "Operates an in-house EAP; has expressed interest in 'modernizing' their program"
+  },
+  {
+    "id": 8,
+    "company": "Atlas Logistics Group",
+    "industry": "Transportation / logistics",
+    "us_employees": 11000,
+    "contact_name": "Rachel Torres",
+    "contact_title": "Director of Benefits",
+    "health_plan": "Aetna",
+    "notes": "24/7 operations; workforce spread across 30+ distribution centers nationwide"
+  }
+]
