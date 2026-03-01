@@ -57,7 +57,7 @@ cd web && npm install && npm run dev  # Start frontend
 
 ## CRM Integration
 
-This prototype uses web search for enrichment, but in production it would read directly from Salesforce or HubSpot — replacing the Tavily step with CRM data that's already vetted by the sales team.
+This prototype uses web search for enrichment, but in production it would read directly from Salesforce — replacing the Tavily step with CRM data that's already vetted by the sales team.
 
 ### Salesforce (read-only)
 
@@ -73,21 +73,6 @@ GET /services/data/v59.0/query?q=
 ```
 
 Scoped to `api` and `readonly` OAuth scopes — the agent reads account data but never writes back. Prospecting outputs (ICP fit, recommended email, value props) would surface in a custom Lightning component or as a Task/Note attached to the Account, written through a **separate, human-approved write path** managed by the business systems team.
-
-### HubSpot (read-only)
-
-Same pattern via HubSpot's CRM API:
-
-```
-GET /crm/v3/objects/companies/:companyId
-  ?properties=name,industry,numberofemployees,city,state
-
-GET /crm/v3/objects/contacts
-  ?filterGroups=[{"filters":[{"propertyName":"associatedcompanyid","operator":"EQ","value":":companyId"}]}]
-  &properties=firstname,lastname,jobtitle,email
-```
-
-Uses a **Private App token** with `crm.objects.companies.read` and `crm.objects.contacts.read` scopes only.
 
 ### Why read-only matters
 
