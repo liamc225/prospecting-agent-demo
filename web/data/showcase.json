@@ -1,0 +1,218 @@
+[
+  {
+    "account": {
+      "id": 1,
+      "company": "Meridian Health Partners",
+      "industry": "Health system",
+      "us_employees": 22000,
+      "contact_name": "David Chen",
+      "contact_title": "VP, Total Rewards",
+      "health_plan": "Anthem",
+      "notes": "3 hospitals, 12 outpatient clinics across the Midwest"
+    },
+    "result": {
+      "account_id": 1,
+      "company": "Meridian Health Partners",
+      "icp_fit": "strong_fit",
+      "icp_reasoning": "Meridian Health Partners is a large health system with 22,000 employees — well above the 3,000-employee ICP threshold. It operates on Anthem, one of Rula's three priority health plans. The health system segment is explicitly called out in the 2026 ICP criteria, making this a textbook strong-fit account. The presence of 3 hospitals and 12 outpatient clinics does introduce the self-referral / internal behavioral health politics risk, which is flagged separately but does not downgrade ICP fit.",
+      "matched_value_props": [
+        {
+          "value_prop": "total_cost_of_care_reduction",
+          "relevance_score": 0.92,
+          "reasoning": "At 22,000 employees on Anthem, even modest reductions in behavioral health unit cost or utilization of high-acuity care translate to significant dollar savings. Health systems are acutely aware of employer health plan costs — and face the irony of absorbing those costs themselves. Rula's in-network, high-quality outpatient therapy model can divert spend from ER visits, inpatient, and specialist overuse driven by untreated mental health conditions."
+        },
+        {
+          "value_prop": "workforce_productivity",
+          "relevance_score": 0.88,
+          "reasoning": "Health systems — especially those with hospitals — employ large numbers of nurses, CNAs, and frontline clinical staff in high-burnout, high-turnover roles. Absenteeism, presenteeism, and attrition tied to untreated mental health are measurable and costly. Rula provides fast access to care that can directly reduce these outcomes. A VP of Total Rewards will recognize this link intuitively."
+        },
+        {
+          "value_prop": "eap_upgrade",
+          "relevance_score": 0.72,
+          "reasoning": "Large health systems commonly rely on legacy EAP vendors that underperform on continuity of care and utilization rates — a particular irony when the employer is a health system that champions clinical quality. If Meridian's EAP is traditional, Rula is a compelling supplement or replacement. Relevance score tempered slightly because no EAP vendor was confirmed in the account data — this should be a discovery question."
+        }
+      ],
+      "email_framework": "leader_responsibilities",
+      "email_subject": "Behavioral health access for Meridian's 22,000 employees",
+      "email_body": "Hi David,\n\nAs VP of Total Rewards at a health system, you're in a uniquely complex position: you're responsible for your employees' benefits — including mental health access — while operating inside an organization that delivers care to the community.\n\nMost Total Rewards leaders I speak with at health systems are grappling with the same tension: frontline clinical staff (nurses, CNAs, allied health) are burning out faster than ever, yet behavioral health utilization through traditional programs stays frustratingly low. The result shows up in turnover costs and rising health plan spend.\n\nWith 22,000 employees on Anthem, even a modest improvement in timely access to therapy can move the needle meaningfully on both.\n\nI'd love to share what we're seeing work at comparable health systems — would 15 minutes this month be worthwhile?\n\nBest,\n[Sender Name]",
+      "discovery_questions": [
+        {
+          "question": "How do your employees currently access behavioral health care — are they primarily referred to your own outpatient clinics, directed to your EAP, or largely finding their own providers?",
+          "rationale": "Critical to understanding the self-referral dynamic. If Meridian's behavioral health department expects to serve employees internally, positioning Rula requires navigating that relationship carefully. This also surfaces whether the EAP is the primary access point or a secondary one."
+        },
+        {
+          "question": "What does utilization look like for your current behavioral health or EAP programs, and how satisfied are you with the continuity of care employees receive after an initial session?",
+          "rationale": "Low EAP utilization and poor session continuity are the two most common failure modes of legacy programs. This question lets David self-identify the gap without Rula naming it — and opens the door to positioning Rula as a high-quality supplement or replacement."
+        },
+        {
+          "question": "When you look at your Anthem claims data, how significant is behavioral health as a cost driver — and is spend trending in a direction that's on leadership's radar?",
+          "rationale": "Connects the Total Cost of Care value prop directly to David's accountability. A VP of Total Rewards will have visibility into claims trends. If behavioral health is a rising cost category, this surfaces urgency and a clear ROI framing for a follow-up conversation."
+        }
+      ],
+      "confidence_score": 0.82,
+      "flags": [
+        "Self-referral risk: Meridian operates 3 hospitals and 12 outpatient clinics — it likely has an internal behavioral health department. The BH team may resist an external telehealth offering perceived as competing for patient/employee volume. Discovery must establish the internal access model before positioning Rula. Consider looping in a clinical partnership angle if resistance is anticipated.",
+        "No EAP vendor confirmed: Current EAP or behavioral health point solution is unknown. EAP Upgrade value prop is included at moderate relevance but should be validated in discovery before leading with it.",
+        "No web research or enrichment data provided: Benefits intelligence, current vendor stack, and employee sentiment are unknown. Confidence score reflects this gap — outreach is directionally strong but would benefit from enrichment before sending."
+      ],
+      "benefits_intelligence": "No web research or enrichment data was provided for this account. No current EAP vendor, benefits stack, or employee review signals are available. Recommend running enrichment (LinkedIn, Glassdoor, health system benefits pages) to identify: (1) current EAP/behavioral health vendor, (2) any public employee sentiment around mental health benefits, (3) recent benefits-related news or announcements from Meridian Health Partners.",
+      "sparse_data_handling": "Account data is moderately complete: company size, industry, contact, and health plan are all confirmed — the core ICP signals are present. The primary gap is absence of enrichment data (EAP vendor, benefits stack, employee sentiment). This does not affect ICP fit assessment but does limit personalization depth and suppresses confidence score to 0.82. The email was written using role-based and industry-based personalization (VP Total Rewards at a health system) rather than account-specific intel, which is appropriate given the data available. Enrichment is recommended before sending."
+    },
+    "quality": {
+      "checks": {
+        "has_value_prop_match": true,
+        "has_reasoning": true,
+        "email_under_150_words": true,
+        "has_discovery_questions": true,
+        "has_icp_assessment": true,
+        "confidence_above_threshold": true,
+        "email_suppression_justified": true
+      },
+      "quality_score": 1
+    }
+  },
+  {
+    "account": {
+      "id": 2,
+      "company": "Lakeview University",
+      "industry": "University",
+      "us_employees": 14000,
+      "contact_name": "Sarah Okafor",
+      "contact_title": "Director of Employee Wellness",
+      "health_plan": "Aetna",
+      "notes": "Includes 6,000 staff + 8,000 student employees; wellness program recently expanded"
+    },
+    "result": {
+      "account_id": 2,
+      "company": "Lakeview University",
+      "icp_fit": "strong_fit",
+      "icp_reasoning": "Lakeview University meets all three ICP criteria for universities: it is a university, it has 14,000 employees (well above the 3,000-employee threshold), and it carries Aetna as its health plan — one of Rula's three priority health plan alignments. The mix of 6,000 staff and 8,000 student employees adds a dual-population dynamic that amplifies both EAP Upgrade and Employee Access & Experience value props. The recently expanded wellness program signals active investment in employee wellbeing and an engaged decision-maker likely open to new partnerships.",
+      "matched_value_props": [
+        {
+          "value_prop": "eap_upgrade",
+          "relevance_score": 0.9,
+          "reasoning": "Universities with recently expanded wellness programs frequently encounter the ceiling of traditional EAP models — limited session counts, poor continuity, and low employee utilization. The fact that Lakeview just expanded its wellness program suggests leadership is actively investing in filling gaps, making this a prime moment to position Rula as a deeper, more durable complement or replacement to their existing EAP."
+        },
+        {
+          "value_prop": "employee_access_and_experience",
+          "relevance_score": 0.87,
+          "reasoning": "With 8,000 student employees alongside 6,000 staff, Lakeview serves a population that skews younger and is statistically more likely to experience anxiety, depression, and burnout — yet less likely to navigate complex insurance-based care on their own. Rula's fast, in-network access removes friction for exactly this demographic. The dual-population structure creates two distinct access problems that Rula can address simultaneously."
+        },
+        {
+          "value_prop": "workforce_productivity",
+          "relevance_score": 0.72,
+          "reasoning": "Student employees in roles like dining, facilities, and administrative support often face high-stress, lower-wage conditions with limited mental health support. Absenteeism and turnover in these roles carry real operational costs for the university. Rula's ability to get employees into care faster directly addresses the presenteeism and retention challenges universities frequently undercount."
+        }
+      ],
+      "email_framework": "challenge_of_similar_companies",
+      "email_subject": "Mental health access at Lakeview — a pattern we see at universities your size",
+      "email_body": "Hi Sarah,\n\nUniversities that recently expanded their wellness programs often hit the same wall: traditional EAP models weren't built for the depth of care employees actually need — limited sessions, long waits, and low follow-through mean unresolved mental health issues keep showing up as absenteeism and turnover.\n\nAt Lakeview, with a workforce that spans 6,000 staff and 8,000 student employees, that gap is especially pronounced. Younger workers and student employees are among the highest-need, hardest-to-reach populations — and the ones most likely to abandon care when access is complicated.\n\nRula partners with universities on Aetna to make in-network therapy and psychiatry genuinely accessible — faster matching, no waitlists, and continuity that EAPs typically can't offer.\n\nWould you have 15 minutes in the next couple of weeks to compare notes on what you're seeing?\n\nBest,\n[Rep Name]",
+      "discovery_questions": [
+        {
+          "question": "Now that Lakeview's wellness program has expanded, how is your current EAP performing in terms of employee utilization — particularly among student employees and hourly staff?",
+          "rationale": "This surfaces whether the expanded wellness investment is filling real gaps or exposing EAP limitations. It also distinguishes between the two populations (staff vs. student employees) who may have very different access and utilization patterns."
+        },
+        {
+          "question": "When employees do seek mental health support, what tends to be the biggest friction point — finding a provider, understanding their coverage, or actually getting an appointment in a reasonable timeframe?",
+          "rationale": "Identifies where in the access journey employees are dropping off, which sharpens which Rula value prop to lead with in follow-up (access speed, insurance navigation, or care continuity)."
+        },
+        {
+          "question": "Are there specific employee populations — for example, student workers or shift-based staff — where you've found it harder to drive engagement with mental health resources?",
+          "rationale": "Opens a conversation about the dual-population complexity at Lakeview, and positions Rula's off-hours, telehealth-first model as a natural fit for employees who aren't reachable during standard business hours."
+        }
+      ],
+      "confidence_score": 0.82,
+      "flags": [
+        "No current EAP vendor identified — email references the EAP category generically; confirm vendor in discovery to sharpen positioning",
+        "Student employee population (8,000) is an unusual workforce segment — confirm whether they are benefits-eligible and covered under the Aetna plan, as this affects utilization projections",
+        "Wellness program recently expanded — worth confirming whether a modern mental health vendor (e.g., Lyra, Spring Health) was already added as part of that expansion, which would shift primary value prop away from EAP Upgrade"
+      ],
+      "benefits_intelligence": "No specific EAP vendor or existing mental health benefit vendor was identified from available data. The recently expanded wellness program is a notable trigger — it may indicate either (a) a gap being actively filled, creating an opening for Rula, or (b) a recent vendor already added, which would require repositioning. This should be the first thing validated in discovery. Aetna health plan alignment is confirmed, which is favorable for Rula network utilization rates.",
+      "sparse_data_handling": "Data completeness is solid for this account. Contact name and title, employee count breakdown, health plan, and industry are all present. The main unknown is the current EAP/mental health benefits stack, which is handled via discovery questions rather than assumptions. No adjustments to ICP fit were made on the basis of missing data."
+    },
+    "quality": {
+      "checks": {
+        "has_value_prop_match": true,
+        "has_reasoning": true,
+        "email_under_150_words": true,
+        "has_discovery_questions": true,
+        "has_icp_assessment": true,
+        "confidence_above_threshold": true,
+        "email_suppression_justified": true
+      },
+      "quality_score": 1
+    }
+  },
+  {
+    "account": {
+      "id": 8,
+      "company": "Atlas Logistics Group",
+      "industry": "Transportation / logistics",
+      "us_employees": 11000,
+      "contact_name": "Rachel Torres",
+      "contact_title": "Director of Benefits",
+      "health_plan": "Aetna",
+      "notes": "24/7 operations; workforce spread across 30+ distribution centers nationwide"
+    },
+    "result": {
+      "account_id": 8,
+      "company": "Atlas Logistics Group",
+      "icp_fit": "strong_fit",
+      "icp_reasoning": "Atlas Logistics Group meets two core ICP criteria: (1) 11,000 US employees well above the 3,000-employee threshold, and (2) Aetna as the health plan, which is a named priority carrier for Rula's employer channel. The transportation/logistics industry is a high-signal vertical — shift-based, geographically dispersed workforces are well-documented as high-stress, high-turnover populations with historically underserved mental health needs. 30+ distribution centers across the country further amplifies the access and fragmentation problem Rula is purpose-built to solve. Strong ICP fit on all dimensions.",
+      "matched_value_props": [
+        {
+          "value_prop": "workforce_productivity",
+          "relevance_score": 0.95,
+          "reasoning": "Logistics and distribution workforces experience above-average rates of absenteeism, burnout, and turnover driven by physically demanding 24/7 shift work, irregular hours, and high job stress. At 11,000 employees across 30+ sites, even modest reductions in absenteeism and attrition represent measurable cost savings. Rula gets employees into care quickly, directly addressing the cycle of untreated mental health → lost productivity."
+        },
+        {
+          "value_prop": "employee_access_and_experience",
+          "relevance_score": 0.9,
+          "reasoning": "Employees spread across 30+ distribution centers — many in non-metropolitan areas — face significant barriers to finding in-network behavioral health providers locally. Rula's telehealth model eliminates geography as a constraint and allows employees to schedule care around shift patterns. This is a direct structural fit for Atlas's distributed workforce model."
+        },
+        {
+          "value_prop": "total_cost_of_care_reduction",
+          "relevance_score": 0.8,
+          "reasoning": "With 11,000 Aetna-covered employees, small improvements in behavioral health utilization quality translate into meaningful plan cost reductions. Untreated behavioral health conditions in shift workforces frequently present as downstream medical spend (MSK, substance use, ER visits). Rula's in-network, high-quality care model reduces total cost of care — a natural conversation for a Director of Benefits managing a large Aetna plan."
+        }
+      ],
+      "email_framework": "do_the_maths",
+      "email_subject": "Mental health access for 11,000 employees across 30+ sites",
+      "email_body": "Hi Rachel,\n\nRunning benefits for a 24/7 logistics workforce spread across 30+ distribution centers is a different challenge than a traditional office environment — your employees are working nights, weekends, and rotating shifts, often far from major metro areas where behavioral health providers are concentrated.\n\nIndustry data suggests that in shift-heavy workforces, untreated mental health conditions contribute to turnover costs of $3,000–$6,000 per hourly employee. At Atlas's scale, even a 5% improvement in retention among a fraction of that workforce moves the needle significantly on plan spend and operational continuity.\n\nRula connects employees to licensed therapists and psychiatrists via video or phone — entirely outside of work hours, fully in-network with Aetna, with no waitlists.\n\nWould you have 15 minutes in the next couple of weeks to compare notes on how other logistics employers are approaching this?\n\nBest,\n[Sender Name]",
+      "discovery_questions": [
+        {
+          "question": "How are employees across your distribution centers currently accessing behavioral health care — are you seeing meaningful utilization variation between sites in urban areas versus more rural locations?",
+          "rationale": "Geographic dispersion to 30+ centers likely means uneven provider availability. This surfaces the access gap Rula is built to solve and helps quantify where the problem is most acute."
+        },
+        {
+          "question": "What does your current EAP or mental health benefit look like, and are you satisfied with the depth of care employees are actually getting through it — beyond the first few sessions?",
+          "rationale": "Traditional EAPs cap sessions and often fail to connect employees to ongoing care. Understanding current vendor performance opens the door to positioning Rula as a meaningful upgrade or complement."
+        },
+        {
+          "question": "When you think about the cost drivers in your Aetna plan, how much visibility do you have into behavioral health as a contributor — and is that something your leadership has flagged as a priority to address?",
+          "rationale": "Connects the benefits conversation to plan economics, qualifying whether Rachel has the organizational mandate and budget lens to champion a mental health initiative internally."
+        }
+      ],
+      "confidence_score": 0.88,
+      "flags": [
+        "No web research / enrichment data provided — EAP vendor unknown. Discovery question included to surface this.",
+        "Workforce connectivity: 24/7 shift operations noted, but this is an on-shift constraint only — not a fundamental access barrier. Employees can use Rula off-shift via personal devices. No delivery risk flagged.",
+        "Distribution center locations not specified — some sites may be in rural areas with limited broadband; worth validating during discovery but not flagged as a blocker given telehealth works on mobile."
+      ],
+      "benefits_intelligence": "No external enrichment or web research was provided for this account. EAP vendor, current behavioral health utilization data, and employee sentiment signals are unknown. Email strategy defaults to quantified industry benchmarks (shift workforce turnover costs) rather than account-specific competitive intelligence. Discovery questions are designed to surface EAP vendor and plan performance gaps in the first conversation.",
+      "sparse_data_handling": "Core ICP signals are complete (employee count, industry, health plan, contact name and title). The primary gap is absence of enrichment data on current benefits vendors and employee sentiment. This does not affect ICP fit assessment but limits personalization depth. Confidence score reflects strong structural fit tempered by the absence of competitive intelligence that would sharpen value prop selection and email specificity."
+    },
+    "quality": {
+      "checks": {
+        "has_value_prop_match": true,
+        "has_reasoning": true,
+        "email_under_150_words": true,
+        "has_discovery_questions": true,
+        "has_icp_assessment": true,
+        "confidence_above_threshold": true,
+        "email_suppression_justified": true
+      },
+      "quality_score": 1
+    }
+  }
+]
