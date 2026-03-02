@@ -137,7 +137,8 @@ Select ONE framework per account based on what you know. The framework determine
 - Keep emails under 150 words
 - End with a clear, low-friction CTA (suggest a 15-minute call, not a demo)
 - Tone: professional but warm, not salesy
-- Do NOT mention Rula's product is free in the first touch — that comes in the meeting
+- Do NOT use em dashes (—) anywhere in the email. Use periods, commas, or short sentences instead.
+- Do NOT mention Rula's product is free in the first touch. That comes in the meeting.
 - Record which framework you selected in the output
 
 ## Quality Criteria
