@@ -1,4 +1,4 @@
-# Rula Prospecting Agent
+# Prospecting Agent
 
 AI-powered account qualification and outreach generation for Rula's employer AE sales motion. Enriches a company from the web, assesses ICP fit, matches value propositions, and generates personalized outreach — all through structured Claude outputs.
 
