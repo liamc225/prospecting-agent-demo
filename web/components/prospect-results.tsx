@@ -19,11 +19,8 @@ const VP_LABELS: Record<ValueProp, string> = {
 };
 
 const FRAMEWORK_LABELS: Record<string, string> = {
-  do_the_maths: "Do the Maths",
-  short_trigger: "Short Trigger",
-  challenge_of_similar_companies: "Challenge of Similar Companies",
-  neutral_insight: "Neutral Insight",
-  leader_responsibilities: "Leader Responsibilities",
+  pain_led: "Pain-Led",
+  insight_led: "Insight-Led",
 };
 
 function scoreColor(v: number): string {
@@ -88,9 +85,16 @@ export function ProspectResults({ data }: ProspectResultsProps) {
         <div className="border-t border-border-light pt-5">
           <div className="flex items-center justify-between mb-3">
             <SectionLabel className="mb-0">Outreach Email</SectionLabel>
-            <span className="text-[0.62rem] font-bold tracking-[0.06em] uppercase px-2 py-0.5 rounded bg-accent-soft text-accent-muted">
-              {FRAMEWORK_LABELS[result.email_framework] ?? result.email_framework}
-            </span>
+            <div className="flex items-center gap-2">
+              {result.flags.some((f) => f.toLowerCase().includes("no contact")) && (
+                <span className="text-[0.62rem] font-bold tracking-[0.06em] uppercase px-2 py-0.5 rounded bg-amber-soft text-amber-muted">
+                  Draft — Contact Needed
+                </span>
+              )}
+              <span className="text-[0.62rem] font-bold tracking-[0.06em] uppercase px-2 py-0.5 rounded bg-accent-soft text-accent-muted">
+                {FRAMEWORK_LABELS[result.email_framework] ?? result.email_framework}
+              </span>
+            </div>
           </div>
           <div className="text-[0.82rem] font-semibold text-text mb-2">
             {result.email_subject}

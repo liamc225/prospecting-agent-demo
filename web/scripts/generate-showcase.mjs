@@ -64,11 +64,8 @@ const PROSPECTING_SCHEMA = {
     email_framework: {
       type: "string",
       enum: [
-        "do_the_maths",
-        "short_trigger",
-        "challenge_of_similar_companies",
-        "neutral_insight",
-        "leader_responsibilities",
+        "pain_led",
+        "insight_led",
       ],
     },
     email_subject: { type: "string" },
@@ -178,10 +175,8 @@ async function runProspecting(account) {
   if (!result.flags) result.flags = [];
 
   if (!account.contact_name) {
-    result.email_subject = "";
-    result.email_body = "";
     if (!result.flags.some((f) => f.toLowerCase().includes("no contact"))) {
-      result.flags.push("No contact identified — outreach cannot proceed");
+      result.flags.push("No contact identified — email is a draft, needs a named recipient before sending");
     }
   }
 

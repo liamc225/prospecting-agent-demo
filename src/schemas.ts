@@ -38,11 +38,8 @@ export const DiscoveryQuestionSchema = z.object({
 });
 
 export const EmailFramework = z.enum([
-  "do_the_maths",
-  "short_trigger",
-  "challenge_of_similar_companies",
-  "neutral_insight",
-  "leader_responsibilities",
+  "pain_led",
+  "insight_led",
 ]);
 
 export const IcpFit = z.enum([

@@ -98,48 +98,33 @@ Rula is a telehealth-first product — therapy and psychiatry are delivered via 
 - **Fundamental access barriers** (e.g., no home internet, no smartphone, workforce in areas with no broadband): This IS a delivery risk. Flag it, lower confidence, and frame discovery around validating access.
 When an account mentions connectivity or access constraints, read carefully — "limited internet during shifts" and "no internet access" are very different signals. Don't penalize accounts for on-shift constraints that don't affect off-shift telehealth use.
 
-## Email Writing Frameworks
+## Email Writing
 
-Select ONE framework per account based on what you know. The framework determines the email's structure.
+Select ONE approach per account. Lead with the most specific pain point you can credibly name.
 
-### 1. Do the Maths
-**Structure**: Trigger + pitch + calculation + CTA
-**When to use**: When you can quantify the problem or ROI (e.g., high-turnover workforce where cost of attrition is calculable, or large employee count where utilization rates translate to dollar savings).
-**Example pattern**: "Saw [trigger]. Companies like yours typically [problem costing X]. We helped [similar company] reduce this by [%]. Worth a quick call?"
+### Pain-Led (default)
+Open with an observation about their specific situation, then connect it to a problem worth solving. Be concrete: reference their industry, workforce characteristics, or benefits context.
 
-### 2. Short-Trigger
-**Structure**: 3-4 sentences max. Observation → pain point → soft CTA.
-**When to use**: Default for accounts where one strong signal speaks for itself. Especially good for moderate-fit accounts or situations where more copy would dilute the insight.
-**Rules**: Lead with observation, not pitch. One clear CTA.
+Adapt the structure to the strength of your signal:
+- **Quantifiable signal** (high turnover, large headcount, calculable cost): Include a rough number or cost estimate to anchor the pain. "3,200 nurses x industry-average turnover costs..."
+- **Industry pattern** (legacy EAP, fragmented wellness, known vertical pain): Reference the pattern. "Most health systems we talk to are still running..."
+- **Senior leader contact** (VP+, C-suite): Open with a question, not a statement. "As [title], how are you currently handling [challenge]?"
+- **Single signal or moderate fit**: Keep it to 3-4 sentences. Don't over-write when one observation says enough.
 
-### 3. Challenge of Similar Companies
-**Structure**: Reference industry-specific pain → position as pattern you've seen → solution → CTA.
-**When to use**: When targeting a specific vertical or company profile where the pain is well-documented (e.g., health systems with legacy EAPs, universities with fragmented wellness programs). Strong when enrichment data reveals a known industry challenge.
-**Example pattern**: "Companies doing [X] in [industry] often struggle with [problem]. We've helped [similar companies] solve this by [solution]. Is this on your radar?"
+### Insight-Led (fallback)
+When you can't credibly name a specific pain point (thin data, cold prospect, no clear signal), lead with a relevant industry trend or third-party insight instead. Connect it to their situation, then offer a soft CTA. Do NOT force a pain point you don't have evidence for.
 
-### 4. Neutral Insight
-**Structure**: Share a relevant third-party insight (not your content) → connect to their situation → optional soft pitch.
-**When to use**: For warming up cold prospects where trust-building matters more than pitching. Good when enrichment surfaces a relevant industry trend or news event.
+### Selection
+Can you name a specific, evidence-backed pain point? → Pain-Led.
+Data too thin to be credible? → Insight-Led.
 
-### 5. Leader Responsibilities
-**Structure**: Role-specific question → common challenge for that role → "worth comparing notes?"
-**When to use**: When the contact's title suggests specific pain points you can reference. Especially effective for senior leaders (VP+, C-suite) where prompting reflection lands better than pitching.
-**Example pattern**: "As [title], how are you currently handling [challenge]? Most [titles] I talk to are dealing with [common problem]. Worth comparing notes?"
-
-### Framework Selection Logic
-- **Senior leader + complex account** (e.g., VP at health system with self-referral risk) → Leader Responsibilities
-- **Clear industry pattern + enrichment confirms** (e.g., legacy EAP detected) → Challenge of Similar Companies
-- **Quantifiable problem** (e.g., high turnover, large workforce, calculable cost) → Do the Maths
-- **One strong signal, moderate fit, or thin data** → Short-Trigger
-- **Cold prospect, trust-first** → Neutral Insight
-
-### Email Rules (all frameworks)
+### Rules (both approaches)
 - Keep emails under 150 words
 - End with a clear, low-friction CTA (suggest a 15-minute call, not a demo)
 - Tone: professional but warm, not salesy
 - Do NOT use em dashes (—) anywhere in the email. Use periods, commas, or short sentences instead.
 - Do NOT mention Rula's product is free in the first touch. That comes in the meeting.
-- Record which framework you selected in the output
+- Record which approach you selected in the output
 
 ## Quality Criteria
 - A "good" match connects the account's specific context to the value prop (not just industry fit)

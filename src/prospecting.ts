@@ -80,13 +80,11 @@ export async function runProspectingAgent(
   // Override account_id — don't trust the LLM to echo it correctly
   result.account_id = account.id;
 
-  // Suppress email when no contact is identified
+  // Flag when no contact is identified (email preserved as draft)
   if (!account.contact_name) {
-    result.email_subject = "";
-    result.email_body = "";
     if (!result.flags.some((f) => f.toLowerCase().includes("no contact"))) {
       result.flags.push(
-        "No contact identified — outreach cannot proceed"
+        "No contact identified — email is a draft, needs a named recipient before sending"
       );
     }
   }

@@ -30,11 +30,8 @@ export interface DiscoveryQuestion {
 }
 
 export type EmailFramework =
-  | "do_the_maths"
-  | "short_trigger"
-  | "challenge_of_similar_companies"
-  | "neutral_insight"
-  | "leader_responsibilities";
+  | "pain_led"
+  | "insight_led";
 
 export type IcpFit = "strong_fit" | "moderate_fit" | "weak_fit" | "disqualify";
 

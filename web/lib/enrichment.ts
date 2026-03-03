@@ -13,13 +13,13 @@ interface TavilyResponse {
   results: TavilyResult[];
 }
 
-async function searchCompany(company: string): Promise<TavilyResult[]> {
+async function tavilySearch(query: string): Promise<TavilyResult[]> {
   const res = await fetch("https://api.tavily.com/search", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       api_key: process.env.TAVILY_API_KEY,
-      query: `"${company}" employer employees industry health insurance benefits mental health`,
+      query,
       max_results: 5,
       search_depth: "basic",
     }),
@@ -31,6 +31,20 @@ async function searchCompany(company: string): Promise<TavilyResult[]> {
 
   const data: TavilyResponse = await res.json();
   return data.results;
+}
+
+async function searchCompany(company: string): Promise<TavilyResult[]> {
+  // Two searches in parallel: one for company/benefits context, one for HR contacts
+  const [benefitsResults, contactResults] = await Promise.all([
+    tavilySearch(
+      `"${company}" employer employees industry health insurance benefits mental health`
+    ),
+    tavilySearch(
+      `"${company}" VP HR benefits director chief people officer human resources leader`
+    ),
+  ]);
+
+  return [...benefitsResults, ...contactResults];
 }
 
 // ── Claude structuring ──────────────────────────────────────
@@ -88,7 +102,14 @@ const ACCOUNT_TOOL = {
   },
 };
 
+// Module-level cache: same company in the same warm instance → identical result
+const enrichmentCache = new Map<string, Account>();
+
 export async function enrichCompany(company: string): Promise<Account> {
+  const cacheKey = company.trim().toLowerCase();
+  const cached = enrichmentCache.get(cacheKey);
+  if (cached) return cached;
+
   const searchResults = await searchCompany(company);
 
   const context = searchResults
@@ -102,6 +123,7 @@ export async function enrichCompany(company: string): Promise<Account> {
   const response = await client.messages.create({
     model: "claude-sonnet-4-6",
     max_tokens: 1024,
+    temperature: 0,
     tools: [ACCOUNT_TOOL],
     tool_choice: { type: "tool", name: "create_account" },
     messages: [
@@ -111,10 +133,12 @@ export async function enrichCompany(company: string): Promise<Account> {
 
 Given web search results about "${company}", extract the key fields. Be honest about what you can and cannot find — use null for missing contacts and "Unknown" for missing health plan info.
 
+The first set of results covers company/benefits context. The second set targets HR leadership contacts.
+
 Focus on:
 - Official company name and industry
 - US employee count (look for headcount, "employees", workforce size)
-- HR/Benefits leadership contacts if mentioned
+- HR/Benefits leadership contacts (look for VP HR, Director of Benefits, CHRO, Chief People Officer, etc.)
 - Health insurance carrier
 - Any mental health, EAP, or wellness program context
 
@@ -132,7 +156,7 @@ ${context}`,
 
   const input = toolUse.input as Record<string, unknown>;
 
-  return {
+  const account: Account = {
     id: 99, // Ad-hoc enrichment
     company: input.company as string,
     industry: input.industry as string,
@@ -142,4 +166,7 @@ ${context}`,
     health_plan: input.health_plan as string,
     notes: input.notes as string,
   };
+
+  enrichmentCache.set(cacheKey, account);
+  return account;
 }
