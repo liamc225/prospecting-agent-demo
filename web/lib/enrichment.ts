@@ -135,10 +135,12 @@ Given web search results about "${company}", extract the key fields. Be honest a
 
 The first set of results covers company/benefits context. The second set targets HR leadership contacts.
 
+CRITICAL: Some search results may be about DIFFERENT organizations with similar names (e.g., "Texas State University" when searching for "University of Texas at Austin", or a parent company vs. a subsidiary). Only extract data that clearly belongs to "${company}" itself. Check the URL domain and page title to verify. If a contact or data point comes from a different organization's page, ignore it entirely. When in doubt, use null rather than risk attributing the wrong person to this company.
+
 Focus on:
 - Official company name and industry
 - US employee count (look for headcount, "employees", workforce size)
-- HR/Benefits leadership contacts (look for VP HR, Director of Benefits, CHRO, Chief People Officer, etc.)
+- HR/Benefits leadership contacts (look for VP HR, Director of Benefits, CHRO, Chief People Officer, etc.). Prefer the most senior HR leader whose page clearly belongs to "${company}".
 - Health insurance carrier
 - Any mental health, EAP, or wellness program context
 
