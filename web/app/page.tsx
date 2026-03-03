@@ -106,21 +106,16 @@ function ProspectingApp() {
         </p>
       </header>
 
-      {/* ── Showcase section ─────────────────────────── */}
-      <ShowcaseSection entries={typedShowcaseData} />
-
-      {/* ── Divider ──────────────────────────────────── */}
-      <hr className="border-t border-border my-2 mb-12" />
-
       {/* ── Try It section ─────────────────────────── */}
-      <section className="mb-14 animate-[fadeUp_0.5s_ease_both] [animation-delay:0.35s]">
+      <section className="mb-14 animate-[fadeUp_0.5s_ease_both] [animation-delay:0.15s]">
         <div className="mb-5">
           <h2 className="font-display text-[1.35rem] font-medium text-text mb-1">
             Try It Yourself
           </h2>
           <p className="text-[0.88rem] text-text-3">
             Enter any real company name &mdash; the agent searches the web,
-            structures account data, and runs the full analysis
+            structures account data, and runs the full analysis. Results
+            typically take 1&ndash;2 minutes.
           </p>
         </div>
 
@@ -200,6 +195,22 @@ function ProspectingApp() {
           </div>
         )}
       </section>
+
+      {/* ── Divider ──────────────────────────────────── */}
+      <hr className="border-t border-border my-2 mb-12" />
+
+      {/* ── Showcase section ─────────────────────────── */}
+      <ShowcaseSection entries={typedShowcaseData} />
+
+      <p className="text-center text-sm text-text-3 mt-6 mb-14">
+        Full results and methodology in the{" "}
+        <a
+          href="#"
+          className="font-semibold text-accent hover:text-accent-dark transition-colors underline underline-offset-2"
+        >
+          case study document
+        </a>
+      </p>
 
       {/* Footer */}
       <p className="text-center text-xs text-text-3">
